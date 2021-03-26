@@ -9,7 +9,7 @@ create table USUARIO(
 	app_us varchar(50),
 	apm_us varchar(50));
 
-create tablet CLIENTE(
+create table CLIENTE(
 	id_cliente int primary key,
 	num_ext varchar(50), 
 	num_int varchar(50),
