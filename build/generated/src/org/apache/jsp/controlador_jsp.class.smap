@@ -1,0 +1,16 @@
+SMAP
+controlador_jsp.java
+JSP
+*S JSP
+*F
++ 0 controlador.jsp
+controlador.jsp
++ 1 conexionBD.jsp
+conexionBD.jsp
+*L
+1:55
+1#1,26:56
+2#0,2:82
+5,51:85
+55,2:136
+*E

@@ -10,12 +10,17 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.*;
 
-public final class conexionBD_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class controlador_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
 
   private static java.util.List<String> _jspx_dependants;
+
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants.add("/conexionBD.jsp");
+  }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
@@ -47,6 +52,7 @@ public final class conexionBD_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+      out.write('\n');
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
@@ -66,13 +72,69 @@ public final class conexionBD_jsp extends org.apache.jasper.runtime.HttpJspBase
     
     sql=conex.createStatement();
     
-    //out.println("Conex Bien");
+    out.println("Conex Bien");
     
     }catch(Exception e){
         out.println("ERROR"+e);
 
     }
 
+      out.write('\n');
+      out.write('\n');
+
+    String nombre=request.getParameter("txtnom");
+    String ap=request.getParameter("txtappat");
+    String am=request.getParameter("txtapmat");
+    String correo=request.getParameter("txtcorreo");
+    String contra=request.getParameter("txtpass");
+    
+    String nompro=request.getParameter("txtnomprop");
+    String no_tarj=request.getParameter("txtnotarj");
+    String cvv=request.getParameter("txtcvv");
+    String mes=request.getParameter("txtMes");
+    String year=request.getParameter("txtyear");
+    
+    
+    /*consulta*/
+    /*
+        String qryid="select id_usuario from usuario where email='"+correo+"'";
+        ResultSet data = sql.executeQuery(qryid);
+            
+        while(data.next()){
+            String id_user = data.getString(1);
+            out.println(id_user);
+        }
+    */
+    /*
+    try{
+        if(nombre!=null){*/
+            //String qryusuario="INSERT INTO usuario(id_usuario,nom_us,app_us,apm_us,email,pass) values(null,'"+nombre+"','"+ap+"','"+am+"','"+correo+"','"+contra+"')";
+            //sql.executeLargeUpdate(qryusuario);
+            String qryusuario="INSERT INTO usuario(id_usuario,tipo_us,nom_us,app_us,apm_us,email,pass) values(10,'admin','juli','se','se','se','se')";
+            sql.executeLargeUpdate(qryusuario);
+            /*String qryid="select id_usuario from usuario where email='"+correo+"'";
+            ResultSet data = sql.executeQuery(qryid);*/
+
+            /*while(data.next()){
+                String id_user = data.getString(1);
+                //out.println(id_user);
+            
+            String qrytarj="INSERT INTO tarjeta(nom_propietario,no_tarjeta,cvv,mes,año,id_usuario) values ('"+nompro+"','"+no_tarj+"','"+cvv+"','"+mes+"','"+year+"','6')";
+            sql.executeLargeUpdate(qrytarj);
+            
+            }*/
+            
+            //String qrytarj="INSERT INTO tarjeta(nom_propietario,no_tarjeta,cvv,mes,año,id_usuario) values ('"+nompro+"','"+no_tarj+"','"+cvv+"','"+mes+"','"+year+"','6')";
+            //sql.executeLargeUpdate(qrytarj);
+            
+            out.println("usuario registrado");
+        /*}
+    }catch(Exception e){
+        out.println("ERROR: "+e);
+    }*/
+ 
+      out.write('\n');
+      out.write(' ');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

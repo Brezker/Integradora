@@ -1,9 +1,3 @@
-<%-- 
-    Document   : registro
-    Created on : 25 mar. 2021, 17:14:35
-    Author     : alexi
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,11 +32,11 @@
                     </div>
                     <div class="form-group col-md-4">
                         <label class="form-label" style="font-size: 25px;">Apellido Paterno:</label> 
-                        <input type="text" class="form-control" required name="txt_ap_pat" placeholder="Ejemplo: Martínez">
+                        <input type="text" class="form-control" required name="txtappat" placeholder="Ejemplo: Martínez">
                     </div>
                     <div class="form-group col-md-4" style="font-size: 25px;">
                         <label class="form-label">Apellido Materno:</label> 
-                        <input type="text" class="form-control" required name="txt_ap_mat" placeholder="Ejemplo: Ramos">
+                        <input type="text" class="form-control" required name="txtapmat" placeholder="Ejemplo: Ramos">
                     </div>
                 </div>
                 <br>
@@ -61,26 +55,26 @@
                 <div class="row">
                     <div class=" form-group col-md-4">
                         <label class="form-label" style="font-size: 25px;">Nombre del propietario:</label> 
-                        <input type="text" class="form-control" required name="txtnomprop" placeholder="Ejemplo: Carlos Martínez Ramos">
+                        <input type="text" class="form-control"  name="txtnomprop" placeholder="Ejemplo: Carlos Martínez Ramos">
                     </div>
                     <div class="form-group col-md-4">
                         <label class="form-label" style="font-size: 25px;">Número de Tarjeta:</label> 
-                        <input type="text" class="form-control" required name="txt_ap_pat" placeholder="Ingrese los 16 digitos de su tarjeta.">
+                        <input type="text" class="form-control"  name="txtnotarj" placeholder="Ingrese los 16 digitos de su tarjeta.">
                     </div>
                     <div class="form-group col-md-4" style="font-size: 25px;">
                         <label class="form-label">CVV:</label> 
-                        <input type="text" class="form-control" required name="txt_ap_mat" placeholder="Ingrese los 3 digitos de seguridad de su tarjeta.">
+                        <input type="text" class="form-control"  name="txtcvv" placeholder="Ingrese los 3 digitos de seguridad de su tarjeta.">
                     </div>
                 </div>
                 <br>
                 <div class="row">
                     <div class="form-group col-md-4">
                         <label class="form-label" style="font-size: 25px;">Mes de vencimiento:</label> 
-                        <input type="number" class="form-control" required name="txtMes" placeholder="Ingrese el mes de vencimiento de su tarjeta.">
+                        <input type="number" class="form-control"  name="txtMes" placeholder="Ingrese el mes de vencimiento de su tarjeta.">
                     </div>
                     <div class="form-group col-md-4">
                         <label class="form-label" style="font-size: 25px;">Año de vencimiento:</label> 
-                        <input type="number" class="form-control" required name="txtyear" placeholder="Ingrese el mes de vencimiento de su tarjeta.">
+                        <input type="number" class="form-control"  name="txtyear" placeholder="Ingrese el mes de vencimiento de su tarjeta.">
                     </div>
                 </div>
                 <br>
