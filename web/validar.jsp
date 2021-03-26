@@ -13,11 +13,12 @@
     if(data.next()){
         response.sendRedirect("descargar_pdf.jsp");
     } else {
-        response.sendRedirect("index.jsp");
+        //response.sendRedirect("index.jsp");
         %>
         <script>
                 alert("USUARIO Y/O CONTRASEÑA INCORRECTOS");
         </script>
 <%
+    response.sendRedirect("index.jsp");
     }
 %>
