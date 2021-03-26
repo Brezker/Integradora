@@ -37,10 +37,10 @@
                 </div>
 
                 <!-- Login Form -->
-                <form name="formulario" action="descargar_pdf.jsp">
+                <form name="formulario" action="validar.jsp">
                     <br>
-                    <input type="email" required name="correo" class="fadeIn second" name="txtuser" placeholder="Ingresa tu email:">
-                    <input type="password" required name="pass" class="fadeIn third" name="txtpass" placeholder="Ingresa tu contraseña:">
+                    <input type="email" required name="txtcorreo" class="fadeIn second" placeholder="Ingresa tu email:">
+                    <input type="password" required name="txtpass" class="fadeIn third" placeholder="Ingresa tu contraseña:">
                     <br>
                     <br>
                     <input type="submit" class="fadeIn fourth" value="Iniciar sesión">
