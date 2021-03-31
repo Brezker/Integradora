@@ -1,9 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : 25 mar. 2021, 17:09:25
-    Author     : alexi
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

@@ -10,6 +10,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="CSS/registro.css">
         <link rel="stylesheet" type="text/css" href="CSS/panel.css">
+        
+        <script type="text/javascript" src="JS/script.js"></script>
 
         <title>Registro</title>
         <%
@@ -19,9 +21,11 @@
         %>
     </head>
     <body style="background-image: url(ASSETS/fondo_registro.png)">
+        
+        
 
         <div class="container fadeInDown" style="background-color: white; margin-top: 5px; margin-bottom: 5px; border-radius: 20px; margin-left: auto; margin-right:auto">
-            <form action="controlador.jsp" style="padding-left: 20px; padding-right: 20px;">
+            <form name="formulario" action="controlador.jsp" style="padding-left: 20px; padding-right: 20px;">
                 <img src="ASSETS/logo.png" width="300px" style="padding-top: 10px; padding-bottom: 10x;">
                 <br>
                 <h4>Datos personales:</h4>
@@ -46,8 +50,8 @@
                         <input type="email" class="form-control" name="txtcorreo" placeholder="Ejemplo: correo@dominio.com">
                     </div>
                     <div class="form-group col-md-6">
-                        <label class="form-label" style="font-size: 25px;">Contraseña:</label> 
-                        <input type="password" class="form-control" name="txtpass" placeholder="Crea la contraseña de tu cuenta.">
+                        <label class="form-label" style="font-size: 25px;">Contraseña:</label>
+                        <input type="password" class="form-control" name="txtpass" placeholder="Introduce una contraseña mayor a 8 y menor a 20 caracteres contemplando por lo menos una mayuscula, minuscula y un numero.">
                     </div>
                 </div>
                 <br>
@@ -80,7 +84,7 @@
                 <br>
                 <div class="row" align="center">
                     <div class="form-group col-md-12" style="padding-bottom: 10px;">
-                        <input type="submit" class="btn btn-success" value="Realizar compra y registrarse">
+                        <input type="submit" class="btn btn-success" onclick="return valid_all();" value="Realizar compra y registrarse">
                     </div>
                     <a>ó</a>
                     <a href="index.jsp" style="text-decoration: none;">Regresar a la página principal</a>
@@ -98,6 +102,12 @@
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+        
+        <style>
+        input::-webkit-input-placeholder {
+            font-size: 15px;
+        }
+        </style>
 
     </body>
 </html>

@@ -1,9 +1,3 @@
-<%-- 
-    Document   : descargar_pdf
-    Created on : 25 mar. 2021, 17:13:19
-    Author     : alexi
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
