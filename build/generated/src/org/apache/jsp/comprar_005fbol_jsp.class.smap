@@ -1,0 +1,16 @@
+SMAP
+comprar_005fbol_jsp.java
+JSP
+*S JSP
+*F
++ 0 comprar_bol.jsp
+comprar_bol.jsp
++ 1 conexionBD.jsp
+conexionBD.jsp
+*L
+1:55
+1#1,26:56
+2#0,10:82
+12,29:93
+40,6:122
+*E
