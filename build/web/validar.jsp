@@ -4,15 +4,20 @@
 <%
     String correo=request.getParameter("txtcorreo");
     String pass=request.getParameter("txtpass");
-    //out.println("El nombre es: "+nombre);
-    //Validar if(capo bacio)
-
-    String qry="select * from usuario where email='"+correo+"' and pass='"+pass+"'";
-    ResultSet data = sql.executeQuery(qry);
-
-    if(data.next()){
+    String qryCliente="select * from usuario where email='"+correo+"' and pass='"+pass+"' and tipo_us='cliente'";
+    String qryAdmin="select * from usuario where email='"+correo+"' and pass='"+pass+"' and tipo_us='administrador'";
+    ResultSet dataCliente = sql.executeQuery(qryCliente);
+    ResultSet dataAdmin = sql.executeQuery(qryAdmin);
+    
+    if(dataCliente.next()){
         response.sendRedirect("descargar_pdf.jsp");
-    } else {
+    }
+    
+    else if (dataAdmin.next()){
+        response.sendRedirect("consultar_usuarios.jsp");
+    }
+
+    else {
         //response.sendRedirect("index.jsp");
         %>
         <script>
