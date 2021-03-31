@@ -53,6 +53,8 @@ public final class registro_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl\" crossorigin=\"anonymous\">\r\n");
       out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"CSS/registro.css\">\r\n");
       out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"CSS/panel.css\">\r\n");
+      out.write("        \r\n");
+      out.write("        <script type=\"text/javascript\" src=\"JS/script.js\"></script>\r\n");
       out.write("\r\n");
       out.write("        <title>Registro</title>\r\n");
       out.write("        ");
@@ -64,9 +66,11 @@ public final class registro_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("    </head>\r\n");
       out.write("    <body style=\"background-image: url(ASSETS/fondo_registro.png)\">\r\n");
+      out.write("        \r\n");
+      out.write("        \r\n");
       out.write("\r\n");
       out.write("        <div class=\"container fadeInDown\" style=\"background-color: white; margin-top: 5px; margin-bottom: 5px; border-radius: 20px; margin-left: auto; margin-right:auto\">\r\n");
-      out.write("            <form action=\"controlador.jsp\" style=\"padding-left: 20px; padding-right: 20px;\">\r\n");
+      out.write("            <form name=\"formulario\" action=\"controlador.jsp\" style=\"padding-left: 20px; padding-right: 20px;\">\r\n");
       out.write("                <img src=\"ASSETS/logo.png\" width=\"300px\" style=\"padding-top: 10px; padding-bottom: 10x;\">\r\n");
       out.write("                <br>\r\n");
       out.write("                <h4>Datos personales:</h4>\r\n");
@@ -91,8 +95,8 @@ public final class registro_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <input type=\"email\" class=\"form-control\" name=\"txtcorreo\" placeholder=\"Ejemplo: correo@dominio.com\">\r\n");
       out.write("                    </div>\r\n");
       out.write("                    <div class=\"form-group col-md-6\">\r\n");
-      out.write("                        <label class=\"form-label\" style=\"font-size: 25px;\">Contraseña:</label> \r\n");
-      out.write("                        <input type=\"password\" class=\"form-control\" name=\"txtpass\" placeholder=\"Crea la contraseña de tu cuenta.\">\r\n");
+      out.write("                        <label class=\"form-label\" style=\"font-size: 25px;\">Contraseña:</label>\r\n");
+      out.write("                        <input type=\"password\" class=\"form-control\" name=\"txtpass\" placeholder=\"Introduce una contraseña mayor a 8 y menor a 20 caracteres contemplando por lo menos una mayuscula, minuscula y un numero.\">\r\n");
       out.write("                    </div>\r\n");
       out.write("                </div>\r\n");
       out.write("                <br>\r\n");
@@ -125,7 +129,7 @@ public final class registro_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <br>\r\n");
       out.write("                <div class=\"row\" align=\"center\">\r\n");
       out.write("                    <div class=\"form-group col-md-12\" style=\"padding-bottom: 10px;\">\r\n");
-      out.write("                        <input type=\"submit\" class=\"btn btn-success\" value=\"Realizar compra y registrarse\">\r\n");
+      out.write("                        <input type=\"submit\" class=\"btn btn-success\" onclick=\"return valid_all();\" value=\"Realizar compra y registrarse\">\r\n");
       out.write("                    </div>\r\n");
       out.write("                    <a>ó</a>\r\n");
       out.write("                    <a href=\"index.jsp\" style=\"text-decoration: none;\">Regresar a la página principal</a>\r\n");
@@ -143,6 +147,12 @@ public final class registro_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("        <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js\" integrity=\"sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi\" crossorigin=\"anonymous\"></script>\r\n");
       out.write("        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js\" integrity=\"sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG\" crossorigin=\"anonymous\"></script>\r\n");
+      out.write("        \r\n");
+      out.write("        <style>\r\n");
+      out.write("        input::-webkit-input-placeholder {\r\n");
+      out.write("            font-size: 12px;\r\n");
+      out.write("        }\r\n");
+      out.write("        </style>\r\n");
       out.write("\r\n");
       out.write("    </body>\r\n");
       out.write("</html>");
