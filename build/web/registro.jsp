@@ -28,26 +28,26 @@
                 <div class="row">
                     <div class=" form-group col-md-4">
                         <label class="form-label" style="font-size: 25px;">Nombre:</label> 
-                        <input type="text" class="form-control" required name="txtnom" placeholder="Ejemplo: Carlos">
+                        <input type="text" class="form-control" name="txtnom" placeholder="Ejemplo: Carlos">
                     </div>
                     <div class="form-group col-md-4">
                         <label class="form-label" style="font-size: 25px;">Apellido Paterno:</label> 
-                        <input type="text" class="form-control" required name="txtappat" placeholder="Ejemplo: Martínez">
+                        <input type="text" class="form-control" name="txtappat" placeholder="Ejemplo: Martínez">
                     </div>
                     <div class="form-group col-md-4" style="font-size: 25px;">
                         <label class="form-label">Apellido Materno:</label> 
-                        <input type="text" class="form-control" required name="txtapmat" placeholder="Ejemplo: Ramos">
+                        <input type="text" class="form-control" name="txtapmat" placeholder="Ejemplo: Ramos">
                     </div>
                 </div>
                 <br>
                 <div class="row">
                     <div class=" form-group col-md-6">
                         <label class="form-label" style="font-size: 25px;">Correo Electrónico:</label> 
-                        <input type="email" class="form-control" required name="txtcorreo" placeholder="Ejemplo: correo@dominio.com">
+                        <input type="email" class="form-control" name="txtcorreo" placeholder="Ejemplo: correo@dominio.com">
                     </div>
                     <div class="form-group col-md-6">
                         <label class="form-label" style="font-size: 25px;">Contraseña:</label> 
-                        <input type="password" class="form-control" required name="txtpass" placeholder="Crea la contraseña de tu cuenta.">
+                        <input type="password" class="form-control" name="txtpass" placeholder="Crea la contraseña de tu cuenta.">
                     </div>
                 </div>
                 <br>
