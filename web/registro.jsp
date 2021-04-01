@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@include file="header_index.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,10 +21,6 @@
             response.setDateHeader("Expires",0);
         %>
     </head>
-    <body style="background-image: url(ASSETS/fondo_registro.png)">
-        
-        
-
         <div class="container fadeInDown" style="background-color: white; margin-top: 5px; margin-bottom: 5px; border-radius: 20px; margin-left: auto; margin-right:auto">
             <form name="formulario" action="controlador.jsp" style="padding-left: 20px; padding-right: 20px;">
                 <img src="ASSETS/logo.png" width="300px" style="padding-top: 10px; padding-bottom: 10x;">
@@ -92,13 +89,7 @@
                 <br>
             </form>
         </div>
-
-        <footer class="footer mt-auto py-3 text-white" style="background-color: black; opacity: .5;">
-            <div class="container">
-                <p style="text-align: center; padding-top: 10px; padding-bottom: 5px;">Hecho con ♥️ en la Universidad Tecnológica de Tecámac - © 2021 Ticket2GO</p>
-            </div>
-        </footer>
-
+<%@include file="footer.jsp" %>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
         
