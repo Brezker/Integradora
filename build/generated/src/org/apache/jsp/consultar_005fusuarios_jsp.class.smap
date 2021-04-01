@@ -1,0 +1,22 @@
+SMAP
+consultar_005fusuarios_jsp.java
+JSP
+*S JSP
+*F
++ 0 consultar_usuarios.jsp
+consultar_usuarios.jsp
++ 1 conexionBD.jsp
+conexionBD.jsp
+*L
+1:55,2
+1#1,26:57
+2#0,48:83
+50,3:132
+52,15:135
+67,2:151
+68,2:153
+70,6:155,3
+76,2:173
+78,2:176
+79,29:178
+*E

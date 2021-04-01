@@ -1,11 +1,20 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<%@include file="conexionBD.jsp" %>
+
+<%
+    String idus=request.getParameter("txtid");
+    //out.println("El nombre es: "+nombre);
+    //Validar if(capo bacio)
+
+    try{
+        if(idus!=null){
+            String qry="DELETE FROM usuario where id_usuario="+idus+"";
+            sql.executeUpdate(qry);
+            response.sendRedirect("consultar_usuarios.jsp");
+        }
+    }catch(Exception e){
+        out.println("ERROR"+e);
+
+    }
+
+%>

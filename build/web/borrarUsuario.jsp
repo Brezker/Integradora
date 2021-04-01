@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Borrar Usuario!</h1>
-        <form action="cntrlBorrarUs">
+        <form action="cntrlBorrarUs.jsp">
             <label class="form-label" style="font-size: 25px;">Id del usuario a borrar</label> 
             <br>
             <br>
