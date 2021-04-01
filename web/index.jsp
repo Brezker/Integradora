@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@include file="header_index.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,17 +20,6 @@
         <link rel="stylesheet" type="text/css" href="CSS/login.css">
 
     </head>
-    <body style="background-image: url(ASSETS/fondo_registro.png)">
-        <div class="wrapper fadeInDown">
-            <div id="formContent">
-                <!-- Tabs Titles -->
-
-                <!-- Icon -->
-                <div class="fadeIn first">
-                    <br>
-                    <img src="ASSETS/logo.png" width=300px;>
-                </div>
-
                 <!-- Login Form -->
                 <form name="formulario" action="validar.jsp">
                     <br>
@@ -39,16 +29,8 @@
                     <br>
                     <input type="submit" class="fadeIn fourth" value="Iniciar sesión">
                 </form>
-
-                <!-- Remind Passowrd -->
-                <div id="formFooter">
-                    <a>¿No tienes cuenta?</a>
-                    <a class="underlineHover" style="color: dodgerblue" href="registro.jsp">Registrarse</a>
-                    <br>
-                    <br>
-                    <p>Powered by <img src="ASSETS/logo_ticket2go.png" width="100px" style="vertical-align: middle;"></p>
-                </div>
-
+<%@include file="footer_index.jsp" %>
+<%@include file="footer.jsp" %>
             </div>
         </div>
     </body>
