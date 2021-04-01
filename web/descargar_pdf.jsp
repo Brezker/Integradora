@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@include file="header_index.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,17 +18,6 @@
         <link rel="stylesheet" type="text/css" href="CSS/login.css">
 
     </head>
-    <body style="background-image: url(ASSETS/fondo_descarga.png)">
-        <div class="wrapper fadeInDown">
-            <div id="formContent">
-                <!-- Tabs Titles -->
-
-                <!-- Icon -->
-                <div class="fadeIn first">
-                    <br>
-                    <img src="ASSETS/logo.png" width=300px;>
-                </div>
-
                 <h2 style="color: black;">¡TODO LISTO PARA EL CONGRESO!</h2>
                 <h5>Descarga tu boleto de acceso para el evento (Recuerda que sin él no podrás acceder)</h5>
                 <input type="submit" class="fadeIn fourth" value="Descargar">
@@ -35,14 +25,8 @@
                 <a href="index.jsp" style="text-decoration: none;">Cerrar Sesión</a>
                 <br>
                 <br>
-                <!-- Remind Passowrd -->
-                <div id="formFooter">
-                    <a>Si tienes alguna pregunta, no dudes en contactar a Ticket2GO, o al responsable del evento.</a>
-                    <br>
-                    <br>
-                    <p>Powered by <img src="ASSETS/logo_ticket2go.png" width="100px" style="vertical-align: middle;"></p>
-                </div>
-
+    <%@include file="footer_index.jsp" %>
+    <%@include file="footer_index.jsp" %>
             </div>
         </div>
     </body>
