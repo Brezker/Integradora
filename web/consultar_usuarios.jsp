@@ -1,6 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="conexionBD.jsp" %>
-<%@include file="header.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,6 +13,7 @@
     <title>Administración</title>
   </head>
   <body style="background-color: #e3e3e3">
+       <%@include file="header.jsp" %>
       <section>
           <%
             String qry="SELECT id_usuario, nom_us, app_us, apm_us, email, pass FROM USUARIO where tipo_us='cliente'";
@@ -50,8 +50,9 @@
             </table>
            </div>
        </div> 
-    </div>       
+    </div>
       </section>
+                <%@include file="footer.jsp" %>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -63,5 +64,4 @@
       });
     </script>
   </body>
-  <%@include file="footer.jsp" %> 
 </html>
