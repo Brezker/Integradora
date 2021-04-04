@@ -57,7 +57,7 @@
                         <input value="<% out.print(data.getString(4)); %>" type="text" class="form-control" name="txtappat">
                     </div>
                     <div class="form-group col-md-4" style="font-size: 25px;">
-                        <label class="form-label">Apellido Materno:</label> 
+                        <label class="form-label">Apellido Materno:</label>
                         <input value="<% out.print(data.getString(5)); %>" type="text" class="form-control" name="txtapmat">
                     </div>
                 </div>
