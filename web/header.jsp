@@ -11,13 +11,13 @@
           <a class="nav-link active" aria-current="page" href="consultar_usuarios.jsp" style="padding-left: 40px;"><img src="ASSETS/lupa.png" width="30px"> Visualizar Registros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="padding-left: 40px;"><img src="ASSETS/modificar.png" width="30px"> Modificar Registros</a>
+          <a class="nav-link active" aria-current="page" href="mostrarUsuario.jsp" style="padding-left: 40px;"><img src="ASSETS/modificar.png" width="30px"> Modificar Registros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="padding-left: 40px;"><img src="ASSETS/eliminar.png" width="30px"> Eliminar Registros</a>
+          <a class="nav-link active" aria-current="page" href="borrarUsuario.jsp" style="padding-left: 40px;"><img src="ASSETS/eliminar.png" width="30px"> Eliminar Registros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="padding-left: 40px;"><img src="ASSETS/config.png" width="25px">  Configuración del Evento</a>
+          <a class="nav-link active" aria-current="page" href="configEvento.jsp" style="padding-left: 40px;"><img src="ASSETS/config.png" width="25px">  Configuración del Evento</a>
         </li>
       </ul>
       <form class="d-flex">
