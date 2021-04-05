@@ -17,13 +17,14 @@
           <a class="nav-link active" aria-current="page" href="#" style="padding-left: 40px;"><img src="ASSETS/eliminar.png" width="30px"> Eliminar Registros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="padding-left: 40px;"><img src="ASSETS/config.png" width="25px">  Configuración del Evento</a>
+          <a class="nav-link active" aria-current="page" href="#" style="padding-left: 40px;"><img src="ASSETS/config.png" width="25px">  ConfiguraciÃ³n del Evento</a>
         </li>
       </ul>
       <form class="d-flex">
-        <button class="btn btn-primary" type="submit">Cerrar Sesión</button>
+        <button class="btn btn-primary" type="submit">Cerrar SesiÃ³n</button>
       </form>
     </div>
   </div>
 </nav>
     </header>
+<br>

@@ -10,6 +10,7 @@
          <link href="../CSS/estilos.css" rel="stylesheet" type="text/css"/>
         <title>REGISTRAR CLIENTE</title>
     </head>
+    <%@include file="header.jsp" %>
     <body>
 <center>
        <h1>Consultar Cliente</h1>
@@ -88,4 +89,6 @@
     }
                 %>
             </body>
+            <br>
+<%@include file="footer.jsp" %>
 </html>
