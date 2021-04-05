@@ -1,0 +1,14 @@
+SMAP
+mostrarUsuario_jsp.java
+JSP
+*S JSP
+*F
++ 0 mostrarUsuario.jsp
+mostrarUsuario.jsp
++ 1 footer.jsp
+footer.jsp
+*L
+1,32:49
+1#1,5:81
+32#0,3:86
+*E

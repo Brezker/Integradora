@@ -9,7 +9,15 @@
     String qry="select * from usuario where email='"+correo+"' and pass='"+pass+"'";
     ResultSet data = sql.executeQuery(qry);
     if(data.next()){
-        response.sendRedirect("descargar_pdf.jsp");
+        
+        String qrytipe="select tipo_us,email from usuario where tipo_us='cliente' and email='"+correo+"';";
+        ResultSet tipo_us = sql.executeQuery(qrytipe);
+        if(tipo_us.next()){
+            response.sendRedirect("descargar_pdf.jsp");
+        } else {
+            response.sendRedirect("consultar_usuarios.jsp");
+        }
+        
     } else {
         //response.sendRedirect("index.jsp");
         %>

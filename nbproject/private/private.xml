@@ -5,10 +5,12 @@
         <group>
             <file>file:/C:/Users/Juli/Documents/NetBeansProjects/Integradora/web/cntrlMostUs.jsp</file>
             <file>file:/C:/Users/Juli/Documents/NetBeansProjects/Integradora/web/registro.jsp</file>
+            <file>file:/C:/Users/Juli/Documents/NetBeansProjects/Integradora/web/conexionBD.jsp</file>
             <file>file:/C:/Users/Juli/Documents/NetBeansProjects/Integradora/web/cntrlModUs.jsp</file>
             <file>file:/C:/Users/Juli/Documents/NetBeansProjects/Integradora/web/index.jsp</file>
             <file>file:/C:/Users/Juli/Documents/NetBeansProjects/Integradora/web/mostrarUsuario.jsp</file>
             <file>file:/C:/Users/Juli/Documents/NetBeansProjects/Integradora/web/controlador.jsp</file>
+            <file>file:/C:/Users/Juli/Documents/NetBeansProjects/Integradora/web/validar.jsp</file>
         </group>
     </open-files>
 </project-private>

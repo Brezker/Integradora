@@ -18,8 +18,10 @@ public final class consultar_005fusuarios_jsp extends org.apache.jasper.runtime.
   private static java.util.List<String> _jspx_dependants;
 
   static {
-    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants = new java.util.ArrayList<String>(3);
     _jspx_dependants.add("/conexionBD.jsp");
+    _jspx_dependants.add("/header.jsp");
+    _jspx_dependants.add("/footer.jsp");
   }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
@@ -87,7 +89,6 @@ public final class consultar_005fusuarios_jsp extends org.apache.jasper.runtime.
       out.write("    <!-- Required meta tags -->\r\n");
       out.write("    <meta charset=\"utf-8\">\r\n");
       out.write("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n");
-      out.write("\r\n");
       out.write("    <!-- Bootstrap CSS -->\r\n");
       out.write("    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6\" crossorigin=\"anonymous\">\r\n");
       out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"CSS/panel.css\">\r\n");
@@ -95,8 +96,8 @@ public final class consultar_005fusuarios_jsp extends org.apache.jasper.runtime.
       out.write("    <title>Administración</title>\r\n");
       out.write("  </head>\r\n");
       out.write("  <body style=\"background-color: #e3e3e3\">\r\n");
-      out.write("    \r\n");
-      out.write("    <header>\r\n");
+      out.write("       ");
+      out.write("<header>\r\n");
       out.write("<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n");
       out.write("  <div class=\"container-fluid\">\r\n");
       out.write("    <img src=\"ASSETS/logo_navbar.png\" width=\"200px\">\r\n");
@@ -124,8 +125,8 @@ public final class consultar_005fusuarios_jsp extends org.apache.jasper.runtime.
       out.write("    </div>\r\n");
       out.write("  </div>\r\n");
       out.write("</nav>\r\n");
-      out.write("    </header>\r\n");
-      out.write("      \r\n");
+      out.write("    </header>");
+      out.write("\r\n");
       out.write("      <section>\r\n");
       out.write("          ");
 
@@ -181,19 +182,17 @@ public final class consultar_005fusuarios_jsp extends org.apache.jasper.runtime.
       out.write("           </div>\r\n");
       out.write("       </div> \r\n");
       out.write("    </div>\r\n");
-      out.write("          \r\n");
       out.write("      </section>\r\n");
-      out.write("      \r\n");
+      out.write("                ");
       out.write("      <footer class=\"footer mt-auto py-3 text-white\" style=\"background-color: #3b3b3b;\">\r\n");
       out.write("      <div class=\"container\">\r\n");
-      out.write("    <p style=\"text-align: center; padding-top: 5px; padding-bottom: 5px;\">Hecho con ♥️ en la Universidad Tecnológica de Tecámac - © 2021 Ticket2GO</p>\r\n");
+      out.write("    <p style=\"text-align: center; padding-top: 5px; padding-bottom: 5px;\">Hecho con ?? en la Universidad Tecnológica de Tecámac - © 2021 Ticket2GO</p>\r\n");
       out.write("        </div>\r\n");
-      out.write("      </footer>\r\n");
-      out.write("      \r\n");
+      out.write("      </footer>");
+      out.write("\r\n");
       out.write("        <script src=\"https://code.jquery.com/jquery-3.3.1.js\"></script>\r\n");
       out.write("    <script src=\"https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js\" integrity=\"sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo\" crossorigin=\"anonymous\"></script>\r\n");
       out.write("    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js\" integrity=\"sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6\" crossorigin=\"anonymous\"></script>\r\n");
-      out.write("    \r\n");
       out.write("    <!--    Datatables-->\r\n");
       out.write("    <script type=\"text/javascript\" src=\"https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js\"></script> \r\n");
       out.write("    <script>\r\n");
@@ -201,9 +200,8 @@ public final class consultar_005fusuarios_jsp extends org.apache.jasper.runtime.
       out.write("         $('#tablaUsuarios').DataTable(); \r\n");
       out.write("      });\r\n");
       out.write("    </script>\r\n");
-      out.write("    \r\n");
       out.write("  </body>\r\n");
-      out.write("</html>");
+      out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

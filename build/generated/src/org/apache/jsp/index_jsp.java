@@ -11,6 +11,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List<String> _jspx_dependants;
 
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants.add("/footer.jsp");
+  }
+
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
   public java.util.List<String> getDependants() {
@@ -48,7 +53,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <!-- Required meta tags -->\r\n");
       out.write("        <meta charset=\"utf-8\">\r\n");
       out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n");
-      out.write("\r\n");
       out.write("        <title>Login</title>\r\n");
       out.write("        ");
 
@@ -57,24 +61,20 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
             response.setDateHeader("Expires",0);
         
       out.write("\r\n");
-      out.write("\r\n");
       out.write("        <!-- Bootstrap CSS -->\r\n");
       out.write("        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1\" crossorigin=\"anonymous\">\r\n");
       out.write("        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW\" crossorigin=\"anonymous\"></script>\r\n");
       out.write("        <link rel=\"stylesheet\" type=\"text/css\" href=\"CSS/login.css\">\r\n");
-      out.write("\r\n");
       out.write("    </head>\r\n");
       out.write("    <body style=\"background-image: url(ASSETS/fondo_registro.png)\">\r\n");
       out.write("        <div class=\"wrapper fadeInDown\">\r\n");
       out.write("            <div id=\"formContent\">\r\n");
       out.write("                <!-- Tabs Titles -->\r\n");
-      out.write("\r\n");
       out.write("                <!-- Icon -->\r\n");
       out.write("                <div class=\"fadeIn first\">\r\n");
       out.write("                    <br>\r\n");
       out.write("                    <img src=\"ASSETS/logo.png\" width=300px;>\r\n");
       out.write("                </div>\r\n");
-      out.write("\r\n");
       out.write("                <!-- Login Form -->\r\n");
       out.write("                <form name=\"formulario\" action=\"validar.jsp\">\r\n");
       out.write("                    <br>\r\n");
@@ -84,7 +84,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <br>\r\n");
       out.write("                    <input type=\"submit\" class=\"fadeIn fourth\" value=\"Iniciar sesión\">\r\n");
       out.write("                </form>\r\n");
-      out.write("\r\n");
       out.write("                <!-- Remind Passowrd -->\r\n");
       out.write("                <div id=\"formFooter\">\r\n");
       out.write("                    <a>¿No tienes cuenta?</a>\r\n");
@@ -93,10 +92,16 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <br>\r\n");
       out.write("                    <p>Powered by <img src=\"ASSETS/logo_ticket2go.png\" width=\"100px\" style=\"vertical-align: middle;\"></p>\r\n");
       out.write("                </div>\r\n");
-      out.write("\r\n");
       out.write("            </div>\r\n");
       out.write("        </div>\r\n");
       out.write("    </body>\r\n");
+      out.write("    ");
+      out.write("      <footer class=\"footer mt-auto py-3 text-white\" style=\"background-color: #3b3b3b;\">\r\n");
+      out.write("      <div class=\"container\">\r\n");
+      out.write("    <p style=\"text-align: center; padding-top: 5px; padding-bottom: 5px;\">Hecho con ?? en la Universidad Tecnológica de Tecámac - © 2021 Ticket2GO</p>\r\n");
+      out.write("        </div>\r\n");
+      out.write("      </footer>");
+      out.write("\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
