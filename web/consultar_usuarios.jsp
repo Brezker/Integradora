@@ -12,8 +12,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css"/>  
     <title>Administración</title>
   </head>
+         <%@include file="header.jsp" %>
   <body style="background-color: #e3e3e3">
-       <%@include file="header.jsp" %>
       <section>
           <%
             String qry="SELECT id_usuario, nom_us, app_us, apm_us, email, pass FROM USUARIO where tipo_us='cliente'";
