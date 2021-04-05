@@ -1,5 +1,4 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="header.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,17 +13,17 @@
         <script type="text/javascript" src="JS/script.js"></script>
 
     </head>
+    <%@include file="header.jsp" %>
     <body>
         <div class="container">
             <div class="row" style="padding: 120px;">
                 <center>
                     <div id="formContent">
-                        <h1>Mostrar Usuario a Modificar</h1>
                         <form action="cntrlMostUs.jsp">
-                            <label class="form-label" style="font-size: 25px;">Id del usuario a Modificar</label> 
+                            <label class="form-label" style="font-size: 25px; padding-top: 30px;">Ingrese el ID del usuario a modificar:</label> 
                             <br>
                             <br>
-                            <input type="text" required name="txtid" class="fadeIn third" placeholder="Ingresa la ID:">
+                            <input type="text" required name="txtid" class="fadeIn third" placeholder="Ingresa el ID:">
                             <br>
                             <br>
                             <input type="submit" class="fadeIn fourth" value="Mostrar Usuario">
@@ -40,3 +39,4 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     </body>
 </html>
+
