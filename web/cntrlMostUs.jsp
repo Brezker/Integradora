@@ -1,6 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="conexionBD.jsp" %>
-<%@include file="header.jsp" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,12 +10,12 @@
         <link href="../CSS/estilos.css" rel="stylesheet" type="text/css"/>
         <title>REGISTRAR CLIENTE</title>
     </head>
-    <body>
+             <%@include file="header.jsp" %>
+    <body style="background-color: #e3e3e3">
         <div class="container" style="padding: 57px;">
 
 
             <center>
-                <h1>Consultar Cliente</h1>
                 <%
             
                     String idus=request.getParameter("txtid");
@@ -26,6 +25,7 @@
                             String qry="SELECT * FROM usuario where id_usuario="+idus+"";
                             ResultSet data = sql.executeQuery(qry);
                 %>
+                <div style="background-color: white;">
                 <table class="table table-hover">
                     <tr>
                         <td>Nombre</td>
@@ -46,6 +46,7 @@
                         <td><% out.print(data.getString(7)); %></td>
                     </tr>
                 </table>
+                    </div>
             </center>
             <h1>Modificar Usuario</h1>
             <form action="cntrlModUs.jsp">
@@ -76,7 +77,7 @@
                 </div>
                 <br>
                 <br>
-                <input type="submit" class="fadeIn fourth" value="Modificar Usuario">
+                <input type="submit" class="fadeIn fourth btn btn-primary" value="Modificar Usuario">
             </form>
         </div>
 
