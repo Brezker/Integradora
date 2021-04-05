@@ -14,7 +14,7 @@
 
     </head>
     <%@include file="header.jsp" %>
-    <body>
+    <body style="background-color: #e3e3e3">
         <div class="container">
             <div class="row" style="padding: 120px;">
                 <center>
@@ -39,4 +39,3 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     </body>
 </html>
-
