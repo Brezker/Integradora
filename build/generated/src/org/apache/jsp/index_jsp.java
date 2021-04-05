@@ -42,15 +42,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <!-- Required meta tags -->\r\n");
       out.write("        <meta charset=\"utf-8\">\r\n");
       out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n");
-      out.write("        <script type=\"text/javascript\" src=\"JS/script.js\"></script>\r\n");
       out.write("\r\n");
       out.write("        <title>Login</title>\r\n");
       out.write("        ");
@@ -85,7 +82,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <input type=\"password\" required name=\"txtpass\" class=\"fadeIn third\" placeholder=\"Ingresa tu contraseña:\">\r\n");
       out.write("                    <br>\r\n");
       out.write("                    <br>\r\n");
-      out.write("                    <input type=\"button\" class=\"fadeIn fourth\" onclick=\"return valid_all(document.formulario.txtcorreo.value);\" value=\"Iniciar sesión\">\r\n");
+      out.write("                    <input type=\"submit\" class=\"fadeIn fourth\" value=\"Iniciar sesión\">\r\n");
       out.write("                </form>\r\n");
       out.write("\r\n");
       out.write("                <!-- Remind Passowrd -->\r\n");
