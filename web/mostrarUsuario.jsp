@@ -13,6 +13,7 @@
         <script type="text/javascript" src="JS/script.js"></script>
         
     </head>
+    <%@include file="header.jsp" %>
     <body>
         <h1>Mostrar Usuario a Modificar!</h1>
         <form action="cntrlMostUs.jsp">
