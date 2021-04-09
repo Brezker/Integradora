@@ -8,9 +8,9 @@
 
     try{
         if(idus!=null){
-            String qry="DELETE FROM usuario where id_usuario="+idus+"";
+            String qry="DELETE FROM usuario where id_usuario="+idus+" and tipo_us='cliente'";
             sql.executeUpdate(qry);
-            response.sendRedirect("consultar_usuarios.jsp");
+            response.sendRedirect("borrarUsuario.jsp");
         }
     }catch(Exception e){
         out.println("ERROR"+e);

@@ -7,8 +7,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <link href="../CSS/estilos.css" rel="stylesheet" type="text/css"/>
-        <title>REGISTRAR CLIENTE</title>
+                <link rel="stylesheet" type="text/css" href="CSS/panel.css">
+        <title>Modifcar Registro</title>
+                <%
+            response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+            response.setHeader("Pragma", "no-cache");
+            response.setDateHeader("Expires",0);
+        %>
     </head>
              <%@include file="header.jsp" %>
     <body style="background-color: #e3e3e3">
@@ -17,12 +22,15 @@
 
             <center>
                 <%
-            
                     String idus=request.getParameter("txtid");
+                    if (idus.equals("1")){
+                        response.sendRedirect("mostrarUsuario.jsp");
+                    }
+                    else{
                     try{
                         if(idus!=null){
                     
-                            String qry="SELECT * FROM usuario where id_usuario="+idus+"";
+                            String qry="SELECT * FROM usuario where id_usuario="+idus+" and tipo_us='cliente'";
                             ResultSet data = sql.executeQuery(qry);
                 %>
                 <div style="background-color: white;">
@@ -48,7 +56,7 @@
                 </table>
                     </div>
             </center>
-            <h1>Modificar Usuario</h1>
+            <h1>Modificar Registro</h1>
             <form action="cntrlModUs.jsp">
                 <div class="row">
                     <div class=" form-group col-md-4">
@@ -92,6 +100,7 @@
         out.println("ERROR"+e);
 
     }
+}
         %>
     </body>
 </html>

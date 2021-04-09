@@ -1,3 +1,11 @@
+<% 
+    HttpSession sesion = request.getSession();
+if(sesion.getAttribute("admin") == null){
+   response.sendRedirect("index.jsp");
+}
+else{
+}
+%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="conexionBD.jsp" %>
 <!DOCTYPE html>
@@ -11,18 +19,23 @@
     <link rel="stylesheet" type="text/css" href="CSS/panel.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css"/>  
     <title>Administración</title>
+            <%
+            response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+            response.setHeader("Pragma", "no-cache");
+            response.setDateHeader("Expires",0);
+        %>
   </head>
          <%@include file="header.jsp" %>
   <body style="background-color: #e3e3e3">
-      <section>
+      <section class="container">
           <%
             String qry="SELECT id_usuario, nom_us, app_us, apm_us, email, pass FROM USUARIO where tipo_us='cliente'";
             ResultSet data = sql.executeQuery(qry);
         %>
     <div class="container" style="margin-top: 30px; background-color: white;">
        <div class="row">
-           <div class="col-lg-12" style="padding: 50px;">
-            <table id="tablaUsuarios" class="table-striped table-bordered table-responsive" style="width:100%;">
+           <div class="col-lg-12 container" style="padding: 50px;">
+            <table id="tablaUsuarios" class="table-responsive table-striped table-bordered " style="width:100%; background-color: white;">
                 <thead class="text-center">
                 <th>ID</th>
                 <th>Nombre</th>
@@ -53,10 +66,11 @@
     </div>
       </section>
                 <%@include file="footer.jsp" %>
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!--    Datatables-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+  </body>
+
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script> 
     <script>
       $(document).ready(function(){

@@ -1,3 +1,11 @@
+<% 
+    HttpSession sesion = request.getSession();
+if(sesion.getAttribute("cliente") == null){
+   response.sendRedirect("index.jsp");
+}
+else{
+}
+%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -27,9 +35,10 @@
                 </div>
                 <h2 style="color: black;">¡TODO LISTO PARA EL CONGRESO!</h2>
                 <h5>Descarga tu boleto de acceso para el evento (Recuerda que sin él no podrás acceder)</h5>
-                <input type="submit" class="fadeIn fourth" value="Descargar">
+                <a class="btn btn-primary" href="descargar.jsp">DESCARGAR PASE DE ACCESO</a>
                 <br>
-                <a href="index.jsp" style="text-decoration: none;">Cerrar Sesión</a>
+                <br>
+                <a href="logout.jsp" style="text-decoration: none;">Cerrar Sesión</a>
                 <br>
                 <br>
                 <!-- Remind Passowrd -->
@@ -42,5 +51,4 @@
             </div>
         </div>
     </body>
-    <%@include file="footer.jsp" %>
 </html>

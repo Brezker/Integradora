@@ -16,12 +16,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="borrarUsuario.jsp" style="padding-left: 40px;"><img src="ASSETS/eliminar.png" width="30px"> Eliminar Registros</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="configEvento.jsp" style="padding-left: 40px;"><img src="ASSETS/config.png" width="25px">  Configuración del Evento</a>
-        </li>
       </ul>
       <form class="d-flex">
-        <button class="btn btn-primary" type="submit">Cerrar Sesión</button>
+          <a class="btn btn-primary" href="logout.jsp">Cerrar Sesi�n</a>
       </form>
     </div>
   </div>

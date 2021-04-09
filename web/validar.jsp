@@ -2,6 +2,7 @@
 <%@include file="conexionBD.jsp" %>
 
 <%
+    HttpSession sesion = request.getSession();
     String correo=request.getParameter("txtcorreo");
     String pass=request.getParameter("txtpass");
     //out.println("El nombre es: "+nombre);
@@ -12,9 +13,11 @@
         
         String qrytipe="select tipo_us,email from usuario where tipo_us='cliente' and email='"+correo+"';";
         ResultSet tipo_us = sql.executeQuery(qrytipe);
-        if(tipo_us.next()){
+        if(tipo_us.next() && sesion.getAttribute("cliente") == null){
+            sesion.setAttribute("cliente", correo);
             response.sendRedirect("descargar_pdf.jsp");
-        } else {
+        } else{
+            sesion.setAttribute("admin", correo);
             response.sendRedirect("consultar_usuarios.jsp");
         }
         

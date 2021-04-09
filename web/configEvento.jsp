@@ -8,7 +8,6 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="CSS/panel.css">
-        <link rel="stylesheet" type="text/css" href="CSS/login.css">
 
         <script type="text/javascript" src="JS/script.js"></script>
 
@@ -18,19 +17,23 @@
         <div class="container">
             <div class="row" style="padding: 50px;">
                 <center>
-                    <div id="formContent">
+                    <div id="formContent" style="background-color: white;">
                         <form action="">
-                            <label class="form-label" style="font-size: 20px; padding-top: 30px;">Ingrese la fecha de la venta de accesos:</label> 
+                            <h3 style="padding-top: 20px;">Fecha de venta:</h3>
                             <br>
-                            <label class="form-label" style="font-size: 25px;">Inicio:</label> 
-                            <br>
-                            <input type="text" required name="txti" class="fadeIn third" placeholder="Día:">
-                            <br>
-                            <input type="text" required name="txti" class="fadeIn third" placeholder="Mes:">
-                            <br>
-                            <input type="text" required name="txti" class="fadeIn third" placeholder="Año:">
-                            <br>
-                            <br>
+                                    <div class="row" style="padding: 30px;">
+                                        <label class="form-label" style="font-size: 25px;">Inicio:</label> 
+                                        <div class="col-md-4">
+                                            <input type="text" required name="txti" class="form-control" placeholder="Día:">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" required name="txti" class="form-control" placeholder="Mes:">
+                                        </div>
+                                         <div class="col-md-4">
+                                            <input type="text" required name="txti" class="form-control" placeholder="Año:">
+                                        </div>
+                                    </div>
+                            
                             <label class="form-label" style="font-size: 25px;">Fin:</label> 
                             <br>
                             <input type="text" required name="txti" class="fadeIn third" placeholder="Día:">
@@ -40,7 +43,7 @@
                             <input type="text" required name="txti" class="fadeIn third" placeholder="Año:">
                             <br>
                             <br>
-                            <input type="submit" class="fadeIn fourth" value="Confirmar fecha">
+                            <input type="submit" class="btn btn-warning" style="color: white;" value="Confirmar fecha">
                             <br>
                             <br>
                         </form>

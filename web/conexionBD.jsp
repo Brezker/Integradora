@@ -13,7 +13,7 @@
     
     try{
     Class.forName("org.postgresql.Driver");
-    conex=(Connection)DriverManager.getConnection("jdbc:postgresql://localhost:5432/integradora","postgres","root");
+    conex=(Connection)DriverManager.getConnection("jdbc:postgresql://localhost:5432/integradora","postgres","bd");
     
     sql=conex.createStatement();
     
